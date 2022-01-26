@@ -1,0 +1,11 @@
+./animais/animais_fofinhos.txt
+./animais/animais_raivosos.txt
+./animais/arquivos_listados.txt
+./animais/cores.txt
+./animais/fofinhos_raivosos.txt
+./animais/historico.txt
+./animais/nomes-e-cores.txt
+./animais/nomes.txt
+./nomes/apelidos.txt
+./nomes/nomes_completos.txt
+./nomes/nomes_secretos.txt
