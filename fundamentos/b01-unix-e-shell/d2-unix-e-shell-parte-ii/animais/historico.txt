@@ -1,5 +1,0 @@
-  249  who
-  250  rm -rf exemplo
-  251  history 
-  252  history | tail -n 3 
-  253  history | tail -n 5 | cat > historico.txt
