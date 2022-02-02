@@ -1,3 +1,4 @@
+
 const a = 5;
 const b = 9;
 
@@ -15,3 +16,6 @@ console.log(div);
 
 let mod = a % b;
 console.log(mod);
+
+
+
