@@ -4,7 +4,7 @@ const c=30;
 
 let sum = a + b + c;
 
-if (sum <= 180) {
+if (sum > 179.9 && sum <=180) {
   console.log(true);
 } else {
   console.log(false)
