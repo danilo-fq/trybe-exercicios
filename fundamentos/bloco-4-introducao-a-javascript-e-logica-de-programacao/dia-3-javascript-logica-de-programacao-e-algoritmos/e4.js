@@ -1,11 +1,4 @@
-//4 - Desenvolva um algoritmo que verifica se a pessoa é maior ou menor de idade.
-//Imprima no console seguindo o exemplo: "A pessoa é maior de idade".
-//Bônus: Crie a condição utilizando operador ternário.
+//4 - Um número primo é aquele divisível apenas por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que retorne o maior número primo entre 0 e 50.
 
-const idades = [5, 9, 15, 13, 18, 25, 55, 90];
 
-let pessoa = idades[Math.floor(Math.random() * idades.length)];
-
-console.log(pessoa);
-pessoa >= 18 ? console.log("Pessoa é maior de idade") : console.log ("Menor de idade");
 
