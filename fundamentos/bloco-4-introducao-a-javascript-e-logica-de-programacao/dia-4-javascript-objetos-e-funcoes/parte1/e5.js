@@ -23,5 +23,10 @@ let info2 = {
 };
 
 for (const key in info, info2) {
-  console.log(info[key] + ' e ' + info2[key]);
+  if(key === 'recorrente' && info[key] === 'Sim' && info2[key] === 'Sim') {
+    console.log('Ambos recorrentes');
+  } else {
+    console.log(info[key] + ' e ' + info2[key]);
+  }
+  
 }
