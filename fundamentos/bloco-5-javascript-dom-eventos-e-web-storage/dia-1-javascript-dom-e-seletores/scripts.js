@@ -41,4 +41,12 @@ function changeTagText(tagName, text){
 
 changeTagText('h1', 'Exercício 5.1 - JavaScript');
 
-// Exercicio 5 
+// Exercicio 5
+
+function toUpperCaseTagText(tagName) {
+  let paragraphs = document.getElementsByTagName(tagName);
+  for (const text of paragraphs) {
+    text.innerHTML = text.innerHTML.toUpperCase();
+  }
+}
+toUpperCaseTagText('p');
