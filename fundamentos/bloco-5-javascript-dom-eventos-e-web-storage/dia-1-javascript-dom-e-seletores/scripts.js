@@ -13,7 +13,7 @@
 
 // Exercicio 1
 
-function changeText () {
+function changeText() {
   let paragraph = document.getElementsByTagName('p');
   paragraph[1].innerHTML = 'Quero ficar cheio de dinheiro e ter tempo de qualidade para estar com as pessoas que eu gosto';
 }
@@ -22,3 +22,10 @@ changeText();
 
 // Exercicio 2
 
+function changeBG() {
+  let mainDiv = document.getElementsByClassName('main-content');
+  console.log(mainDiv[0].style.backgroundColor = 'rgb(76,164,109)');
+}
+changeBG();
+
+// Exercicio 3
