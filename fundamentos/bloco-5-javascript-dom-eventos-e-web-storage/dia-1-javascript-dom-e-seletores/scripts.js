@@ -50,3 +50,13 @@ function toUpperCaseTagText(tagName) {
   }
 }
 toUpperCaseTagText('p');
+
+// Exercicio 6
+
+function showOnConsole(tagName) {
+  let paragraphs = document.getElementsByTagName(tagName);
+  for (const text of paragraphs) {
+    console.log(text.innerHTML);
+  }
+}
+showOnConsole('p')
