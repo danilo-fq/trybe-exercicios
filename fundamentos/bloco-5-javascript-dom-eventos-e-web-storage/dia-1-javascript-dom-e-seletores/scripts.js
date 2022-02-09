@@ -22,11 +22,12 @@ changeText();
 
 // Exercicio 2
 
-function changeBG() {
-  let mainDiv = document.getElementsByClassName('main-content');
-  mainDiv[0].style.backgroundColor = 'rgb(76,164,109)';
+function changeBgColor(className, color) {
+  let mainDiv = document.getElementsByClassName(className);
+  mainDiv[0].style.backgroundColor = color;
 }
-changeBG();
+changeBgColor('main-content', 'rgb(76,164,109)');
 
 // Exercicio 3
 
+changeBgColor('center-content', 'White');
