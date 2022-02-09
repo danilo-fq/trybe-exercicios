@@ -31,3 +31,12 @@ changeBgColor('main-content', 'rgb(76,164,109)');
 // Exercicio 3
 
 changeBgColor('center-content', 'White');
+
+// Exercicio 4
+
+function changeClassText(className, text){
+  let title = document.getElementsByClassName(className);
+  title[0].innerHTML = text;
+}
+
+changeClassText('title', 'Exercício 5.1 - JavaScript');
