@@ -24,8 +24,9 @@ changeText();
 
 function changeBG() {
   let mainDiv = document.getElementsByClassName('main-content');
-  console.log(mainDiv[0].style.backgroundColor = 'rgb(76,164,109)');
+  mainDiv[0].style.backgroundColor = 'rgb(76,164,109)';
 }
 changeBG();
 
 // Exercicio 3
+
