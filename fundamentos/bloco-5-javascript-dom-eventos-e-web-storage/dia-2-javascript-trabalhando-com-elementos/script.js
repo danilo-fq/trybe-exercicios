@@ -33,10 +33,11 @@ document.getElementsByTagName('main')[0].appendChild(newSection);
 
 // 4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
 
-//criar o elemento p
+// criar o elemento p
+let newP = document.createElement('p');
 
-
-
+// por tag p como filho de section
+document.getElementsByTagName('section')[0].appendChild(newP);
 
 // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
