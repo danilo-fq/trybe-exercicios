@@ -41,9 +41,11 @@ document.getElementsByTagName('section')[0].appendChild(newP);
 
 // 5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
 
-document.getElementsByClassName('center-content')[0].className += " left-content";
+// document.getElementsByClassName('center-content')[0].className += " left-content";
+document.getElementsByClassName('center-content')[0].classList.add("left-content");
 
 // 6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
 
 
 // 7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
