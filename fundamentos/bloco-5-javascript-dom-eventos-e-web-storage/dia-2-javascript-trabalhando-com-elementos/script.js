@@ -135,3 +135,7 @@ document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
 document.getElementsByClassName('right-content')[0].parentElement.style.backgroundColor = 'green';
 
 // 2.6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
+
+for (let index = 1; index <= 2; index += 1) {
+  elementUL.lastChild.remove();
+}
