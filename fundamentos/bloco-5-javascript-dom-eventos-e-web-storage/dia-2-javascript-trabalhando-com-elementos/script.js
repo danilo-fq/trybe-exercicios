@@ -131,4 +131,7 @@ elementMain.removeChild(document.getElementsByClassName('left-content')[0]);
 document.getElementsByClassName('right-content')[0].style.marginRight = 'auto';
 
 // 2.5 - Troque a cor de fundo do elemento pai da section criada no passo 3 (aquela que possui a classe center-content ) para a cor verde;
+
+document.getElementsByClassName('right-content')[0].parentElement.style.backgroundColor = 'green';
+
 // 2.6 - Remova os dois últimos elementos ( nove e dez ) da lista criada no passo 8.
