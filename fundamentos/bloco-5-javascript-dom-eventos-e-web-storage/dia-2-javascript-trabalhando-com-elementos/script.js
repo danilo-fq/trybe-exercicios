@@ -69,7 +69,6 @@ elementMain.appendChild(elementSectionRight);
 //criando elemento img
 let newImg = document.createElement('img');
 
-
 //anexando atributo src na img
 newImg.src = "https://picsum.photos/200";
 
@@ -81,5 +80,30 @@ elementSectionLeft.appendChild(newImg);
 
 // 8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
 
+// criando elemento lista não ordenada
+let elementUL = document.createElement('ul');
+
+// criando elementos li da ul e adicionando o texto
+let numbersList = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+for (let index = 0; index < numbersList.length; index += 1) {
+  // criando elemento li
+  let elementLI = document.createElement('li');
+  
+  // adicionando valor da array numbersList
+  elementLI.innerText = numbersList[index];
+
+  // atribuindo li como filha de ul
+  elementUL.appendChild(elementLI);
+}
+
+// atribuindo ul como filha do section-right
+elementSectionRight.appendChild(elementUL);
 
 // 9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+
+//criando elementos h3
+for (let index = 1; index <= 3; index += 1) {
+  let elementH3 = document.createElement('h3');
+  elementH3.innerHTML = 'Esse daqui é ' + index;
+  elementMain.appendChild(elementH3);
+}
