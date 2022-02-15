@@ -84,9 +84,19 @@ holidayButton.addEventListener('click', changeBackGroundColorToHolidays);
     4.1 - Adicione a este botão o ID "btn-friday" .
     4.2 - Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . */
 
+function createFridayButtonAndSetId (dayName) {
+  let fridayButton = document.createElement('button');
+  fridayButton.setAttribute('id', 'btn-friday');
+  fridayButton.innerHTML = dayName;
+  buttonsContainerDiv.appendChild(fridayButton);
+}
+createFridayButtonAndSetId('Sexta-feira');
+
 /* 5 - Implemente uma função que adicione ao botão "Sexta-feira" um evento de "click" que modifica o texto exibido nos dias que são Sexta-feira.
 
     5.1 - É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias. */
+
+
 
 /* 6 - Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 
