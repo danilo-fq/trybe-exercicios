@@ -96,6 +96,19 @@ createFridayButtonAndSetId('Sexta-feira');
 
     5.1 - É interessante que este botão possua também a lógica inversa. Ao ser clicado novamente ele retorna à configuração inicial exibindo os dias. */
 
+let fridayButton = document.getElementById('btn-friday');
+let fridayDaysList = document.getElementsByClassName('friday');
+
+fridayButton.addEventListener('click', function () {
+  for (let index = 0; index < fridayDaysList.length; index += 1) {
+    const friday = fridayDaysList[index];
+    if (friday.style.color === 'red') {
+      friday.style.color = '#666';
+    } else {
+      friday.style.color = 'red';
+    }
+  }
+});
 
 
 /* 6 - Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
