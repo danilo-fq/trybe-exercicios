@@ -48,6 +48,15 @@ createDaysOfTheWeek();
       
     2.2 - Adicione a este botão a ID "btn-holiday" .
     2.3 - Adicione este botão como filho/filha da tag <div> com classe "buttons-container" . */
+const buttonsContainerDiv = document.querySelector('.buttons-container');
+
+function createHolidayButton (buttonName) {
+  let holidayButton = document.createElement('button');
+  holidayButton.innerHTML = buttonName;
+  holidayButton.setAttribute("id", "btn-holiday");
+  buttonsContainerDiv.appendChild(holidayButton);
+}
+createHolidayButton('Feriados');
 
 /* 3 - Implemente uma função que adicione ao botão "Feriados" um evento de "click" que muda a cor de fundo dos dias que possuem a classe "holiday" .
     
