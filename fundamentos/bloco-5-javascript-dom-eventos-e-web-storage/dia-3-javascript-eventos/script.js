@@ -115,6 +115,17 @@ fridayButton.addEventListener('click', function () {
 
     Dica - Propriedade: event.target . */
 
+let xmasDay = document.querySelector('.holiday').nextElementSibling;
+
+xmasDay.addEventListener('mouseenter', function (event){
+  event.target.style.zoom = '250%';
+})
+
+xmasDay.addEventListener('mouseleave', function (event){
+  event.target.style.zoom = '100%';
+})
+
+
 /* 7 - Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 
     7.1 - O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" . */
