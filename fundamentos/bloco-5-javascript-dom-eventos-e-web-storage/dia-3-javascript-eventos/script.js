@@ -114,7 +114,7 @@ fridayButton.addEventListener('click', function () {
 /* 6 - Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
 
     Dica - Propriedade: event.target . */
-
+ 
 let xmasDay = document.querySelector('.holiday').nextElementSibling;
 
 xmasDay.addEventListener('mouseenter', function (event){
@@ -129,6 +129,14 @@ xmasDay.addEventListener('mouseleave', function (event){
 /* 7 - Implemente uma função que adiciona uma tarefa personalizada ao calendário. A função deve receber como parâmetro a string com o nome da tarefa (ex: "cozinhar") e criar dinamicamente um elemento com a tag <span> contendo a tarefa.
 
     7.1 - O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" . */
+  
+  let myTasksDiv = document.querySelector('.my-tasks');
+  function addNewTask(taskName) {
+    let task = document.createElement('span');
+    task.innerHTML = taskName;
+    myTasksDiv.appendChild(task);
+  }
+  addNewTask('Treinar Jiu Jitsu');
 
 /* 8 - Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
 
