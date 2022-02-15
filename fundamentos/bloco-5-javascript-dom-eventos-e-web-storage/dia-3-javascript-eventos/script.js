@@ -21,28 +21,28 @@ createDaysOfTheWeek();
     1.2 - Os dias 24, 25 e 31 são feriados e, além da classe day , devem conter também a classe holiday . Ex: <li class="day holiday">24</li>
     1.3 - Os dias 4, 11, 18 e 25 são Sexta-feira. Eles devem conter a classe day e a classe friday . Ex: <li class="day friday">4</li> */
 
-    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    const decDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
 
     // atribuir o pai a uma variável
     const daysList = document.querySelector('#days');
     
     //laço for para criar uma li atribuir o innerhtml e declarar que é filho de daysList
-    function createDaysOfCalendar() {
-      for (let index = 0; index < dezDaysList.length; index += 1) {
-        const daysNumber = dezDaysList[index];
+    function createDecemberDaysOfCalendar() {
+      for (let index = 0; index < decDaysList.length; index += 1) {
+        const dayNumber = decDaysList[index];
         const daysListItem = document.createElement('li');
-        daysListItem.innerHTML = daysNumber;
+        daysListItem.innerHTML = dayNumber;
         daysListItem.classList.add('day');
         daysList.appendChild(daysListItem);
-        if (daysNumber === 24 || daysNumber === 25 || daysNumber === 31) {
+        if ([24, 25, 31].includes(dayNumber)) {
           daysListItem.classList.add('holiday');
         }
-        if (daysNumber === 4 || daysNumber === 11 || daysNumber === 18 || daysNumber === 25) {
+        if ([4, 11, 18].includes(dayNumber)) {
           daysListItem.classList.add('friday');
         }
       }
     }
-    createDaysOfCalendar()
+    createDecemberDaysOfCalendar()
 
 /* 2 - Implemente uma função que receba como parâmetro a string "Feriados" e crie dinamicamente um botão com o nome "Feriados".
       
