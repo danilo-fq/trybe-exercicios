@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaje agora com a TrybeTrip</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header id="header">
+    <h1 id="title">
+      Formulário TrybeTrip
+    </h1>
+  </header>
+  <form action="" id="form"></form>
+    <main id="all-content">
+      <section id="name-email-input">
+        <label for="name-input">Nome:</label>
+        <input type="text" name="name" min="10" max="40" placeholder="Nome Completo" id="name-input" required>
+        <br>
+        <label for="email-input">Email:</label>
+        <input type="email" name="email" min="10" max="50" placeholder="Email mais frequente" id="email-input" required>
+      </section>
+      <section id="radios-options">
+        <fieldset>
+          <legend>Destino Preferido</legend>
+          <input type="radio" name="destiny" id="city" required>
+          <label for="city">Cidade</label>
+          <input type="radio" name="destiny" id="camp" required>
+          <label for="camp">Campo</label>
+          <input type="radio" name="destiny" id="beach" required>
+          <label for="beach">Praia</label>
+          <input type="radio" name="destiny" id="mountains" required>
+          <label for="mountain">Montanhas</label>
+        </fieldset>
+      </section>
+      <section id="textarea">
+        <label for="description">
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        </label>
+        <br>
+        <textarea name="description" id="description" cols="50" rows="8" maxlength="500" placeholder="Digie sua melhor resposta (max:500 caracteres)" required></textarea>
+      </section>
+      <section id="dateSection">
+        <p>
+          Qual a melhor data para sua viagem?
+        </p>
+        <label for="date">Data:</label>
+        <input type="date" name="date" id="date" required>
+      </section>
+      <section id="termsSection">
+        <label for="term-1">Concordo 1</label>
+        <input type="checkbox" name="terms" id="term-1" required>
+        <br>
+        <label for="term-2">Concordo 2</label>
+        <input type="checkbox" name="terms" id="term-2" required>
+      </section>
+    </main>
+    <section id="buttons">
+      <button type="submit" id="send">Enviar</button>
+      <button type="reset" id="clear">Apagar</button>
+    </section>
+  </form>
+</body>
+</html>
