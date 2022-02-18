@@ -13,25 +13,25 @@
       Formulário TrybeTrip
     </h1>
   </header>
-  <form action="" id="form"></form>
+  <form action="" id="form">
     <main id="all-content">
       <section id="name-email-input">
         <label for="name-input">Nome:</label>
-        <input type="text" name="name" min="10" max="40" placeholder="Nome Completo" id="name-input" required>
+        <input type="text" name="name" minlength="10" maxlength="40" placeholder="Nome Completo" id="name-input" required>
         <br>
         <label for="email-input">Email:</label>
-        <input type="email" name="email" min="10" max="50" placeholder="Email mais frequente" id="email-input" required>
+        <input type="email" name="email" minlength="10" maxlength="50" placeholder="Email mais frequente" id="email-input" required>
       </section>
       <section id="radios-options">
         <fieldset>
           <legend>Destino Preferido</legend>
           <input type="radio" name="destiny" id="city" required>
           <label for="city">Cidade</label>
-          <input type="radio" name="destiny" id="camp" required>
+          <input type="radio" name="destiny" id="camp">
           <label for="camp">Campo</label>
-          <input type="radio" name="destiny" id="beach" required>
+          <input type="radio" name="destiny" id="beach">
           <label for="beach">Praia</label>
-          <input type="radio" name="destiny" id="mountains" required>
+          <input type="radio" name="destiny" id="mountains">
           <label for="mountain">Montanhas</label>
         </fieldset>
       </section>
