@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viaje agora com a TrybeTrip</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+
+<body class="notification is-primary">
+  <header id="header">
+    <h1 class="title is-3 has-text-centered" id="title">
+      Formulário TrybeTrip
+    </h1>
+  </header>
+  <form class="column is-full" action="" id="form">
+    <main class="notification is-primary" id="all-content">
+
+      <div class="field">
+        <label class="label" for="name-input">Nome</label>
+        
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" name="name" minlength="10" maxlength="40" placeholder="Nome Completo" id="name-input" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        
+        <div class="field mt-2">
+        <label class="label" for="email-input">Email</label>
+        </div>
+
+        <div class="control has-icons-left">
+          <input class="input is-danger" type="email" name="email" minlength="10" maxlength="50" placeholder="Email mais frequente" id="email-input" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+
+      <div class="field" id="radios-options">
+        <fieldset class="control">
+          <legend class="label mb-2">Destino Preferido</legend>
+
+          <input type="radio" name="destiny" id="city" required>
+          <label class="radio" for="city">Cidade</label>
+
+          <input class="ml-3" type="radio" name="destiny" id="camp">
+          <label class="radio" for="camp">Campo</label>
+
+          <input class="ml-3" type="radio" name="destiny" id="beach">
+          <label class="radio" for="beach">Praia</label>
+
+          <input class="ml-3" type="radio" name="destiny" id="mountains">
+          <label class="radio" for="mountain">Montanhas</label>
+        </fieldset>
+      </div>
+
+      <div class="field" id="textarea">
+        <label class="label" for="description">
+          Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        </label>
+        <textarea class="textarea" name="description" id="description" cols="50" rows="8" maxlength="500" placeholder="Digie sua melhor resposta (max:500 caracteres)" required></textarea>
+      </div>
+
+      <div class="field" id="dateSection">
+        <label class="label" for="date">Qual a melhor data para sua viagem?</label>
+        <input class="input" type="date" name="date" id="date" required>
+      </div>
+
+      <div class="field" id="termsSection">
+        <input class="checkbox" type="checkbox" name="terms" id="term-1">
+        <label class="checkbox" for="term-1">Concordo que não li os termos de compromisso</label>
+        <br>
+        <input class="checkbox" type="checkbox" name="terms" id="term-2">
+        <label  class="checkbox"for="term-2">Autorizo o uso dos meus dados pessoais bem como minhas imagens</label>
+      </div>
+      
+    </main>
+    <section class="field" id="buttons">
+      <button type="submit" id="send">Enviar</button>
+      <button type="reset" id="clear">Apagar</button>
+    </section>
+  </form>
+  
+  <script src="https://kit.fontawesome.com/509f2b4d84.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
