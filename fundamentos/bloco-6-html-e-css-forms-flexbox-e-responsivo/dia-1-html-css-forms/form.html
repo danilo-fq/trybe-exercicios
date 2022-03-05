@@ -17,7 +17,7 @@
     <main id="all-content">
       <section id="name-email-input">
         <label for="name-input">Nome:</label>
-        <input type="text" name="name" minlength="10" maxlength="40" placeholder="Nome Completo" id="name-input" required>
+        <input type="text" name="name" minlength="10" maxlength="40" placeholder="Nome Completo" id="name-input">
         <br>
         <label for="email-input">Email:</label>
         <input type="email" name="email" minlength="10" maxlength="50" placeholder="Email mais frequente" id="email-input" required>
@@ -40,7 +40,7 @@
           Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
         </label>
         <br>
-        <textarea name="description" id="description" cols="50" rows="8" maxlength="500" placeholder="Digie sua melhor resposta (max:500 caracteres)" required></textarea>
+        <textarea name="description" id="description" cols="50" rows="8" placeholder="Digie sua melhor resposta (max:500 caracteres)" required></textarea>
       </section>
       <section id="dateSection">
         <p>
@@ -51,7 +51,7 @@
       </section>
       <section id="termsSection">
         <label for="term-1">Concordo que não li os termos de compromisso</label>
-        <input type="checkbox" name="terms" id="term-1">
+        <input type="checkbox" name="terms" id="term-1" required>
         <br>
         <label for="term-2">Autorizo o uso dos meus dados pessoais bem como minhas imagens</label>
         <input type="checkbox" name="terms" id="term-2">
