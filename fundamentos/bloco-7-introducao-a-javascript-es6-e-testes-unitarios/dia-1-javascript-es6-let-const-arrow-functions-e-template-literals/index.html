@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="counter">
+        Você ainda não clicou no botão
+    </h1>
+    <button id="button">Clique aqui</button>
+    <script>
+        const counterButton = document.getElementById('button');
+        const h1Counter = document.getElementById('counter');
+
+        let counter = 0;
+        counterButton.addEventListener('click', () => {
+            counter += 1;
+            console.log(counter);
+            if (counter === 1) {
+                h1Counter.innerHTML = `Você clicou no botão ${counter} vez.`;
+            } else {
+                h1Counter.innerHTML = `Você clicou no botão ${counter} vezes.`;
+            }
+        })
+    </script>
+</body>
+</html>
