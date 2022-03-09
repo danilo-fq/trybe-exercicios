@@ -48,4 +48,36 @@ const raffle = (number, checkRaffle) => {
 const checkRaffle = (number, drawnNumber) => drawnNumber === number;
 
 
-console.log(raffle(5, checkRaffle));
+// EXERCICIO 3 - Crie uma HOF que receberá três parâmetros. O primeiro será um array de respostas corretas (Gabarito), o segundo será um array de respostas a serem verificadas (respostas da pessoa estudante) e o terceiro é uma função que checa se as respostas estão corretas e faz a contagem da pontuação final recebida pela pessoa estudante. Ao final a HOF deve retornar o total da contagem de respostas certas.
+        // Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desce 0.5 pontos, e quando não houver resposta ("N.A") não altera-se a contagem.
+
+const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
+const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
+
+//baby steps
+//1 - Criar HOF
+//2 - HOF possui 3 parametros
+//3 - 1º parametro uma array de gabarito
+//4 - 2º parametro uma array de respostas para verificar
+//5 - 3º uma callfunction que checa se as respostas estão corretas e faz uma pontuação final do estudante
+//6 - Se uma resposta esta correta +1 ponto, se tiver errada -0.5 ponto e se não houver resposta não altera a contagem
+//7 - a HOF deve retornar o total da contagem de respostas certas
+//8 - Como verificar primeiro item de uma array com primeiro item de uma outra array?
+
+const scoreTest = (testeAnswer, studentAnswer, callback) => {
+  return `A pontuação deste estudante foi de: ${callback(testeAnswer, studentAnswer)} pontos.`
+};
+
+const checkStudentAnswers = (testeAnswer, studentAnswer) => {
+  let score = 0;
+  for (let index = 0; index < testeAnswer.length; index += 1) {
+    for (let index2 = index; index2 <= index; index2 += 1) {
+      if (testeAnswer[index] === studentAnswer[index]) {
+        score += 1;
+      } else if (testeAnswer[index] !== studentAnswer[index] && studentAnswer[index] !== 'N.A') {
+        score -= 0.5;
+      }
+    }
+  }
+  return score;
+}
