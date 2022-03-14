@@ -65,12 +65,13 @@ const books = [
 
 function reduceNames(array) {
   const concat = array.reduce((acumulator, item, index) => {
-    // console.log('acumulador', acumulator.author);
-    // console.log('item', item.author.name);
+    let result;
     if (index === array.length -1) {
-      return `${acumulator} ${item.author.name}.`
+      result = `${acumulator} ${item.author.name}.`;
+    } else {
+      result = `${acumulator} ${item.author.name},`;
     }
-      return `${acumulator} ${item.author.name},`;
+      return result;
     }, '')
     return concat;
   }
