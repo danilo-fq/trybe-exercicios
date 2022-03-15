@@ -10,11 +10,12 @@ const names = [
 //ref https://www.codegrepper.com/code-examples/javascript/count+how+many+times+a+character+appears+in+a+string+javascript
 
 function containsA(array) {
-  const unityWords = array.reduce((fullword, item) => {
-    return fullword + item;
-  })
-  const result = unityWords.toLowerCase().split('a').length -1;
-  return `A quantidade de vezes que a letra a aparece dentro da array names é: ${result}`;
+  const modifiedArray = array.join().split('');
+  const verifyLetters = modifiedArray.reduce((acumulator, letter) => {
+    return letter.toLowerCase() === 'a' ? acumulator + 1 : acumulator;
+  }, 0)
+
+  return verifyLetters;
 }
   
 console.log(containsA(names));
