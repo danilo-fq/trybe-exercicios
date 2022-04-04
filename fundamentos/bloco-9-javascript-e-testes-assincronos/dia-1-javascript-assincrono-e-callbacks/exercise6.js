@@ -23,7 +23,6 @@ const sendMarsTemperature = (callback1, callbackerror) => {
   const tempCelsius = getMarsTemperature();
   // taxa de sucesso de 60% é igual a de 0 à 1 60% dos números são de sucesso ou seja os números de 0 à 0.6 representam o sucesso
   const sucessProbability = Math.floor(Math.random() * 100) <= 60;
-  console.log('Teve sucesso? ', sucessProbability);
     setTimeout(() => {
       if(sucessProbability) callback1(tempCelsius)
       else callbackerror('Robot is busy')
