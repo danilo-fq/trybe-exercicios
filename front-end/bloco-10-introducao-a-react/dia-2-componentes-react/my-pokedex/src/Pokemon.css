@@ -1,0 +1,14 @@
+.Card-Container {
+  display: flex;
+  border: 0.5px solid black;
+  border-radius: 10px;
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem;
+  align-items: center;
+}
+
+.Card-Container p {
+  margin: 10px;
+  text-align: center;
+}
